@@ -1,10 +1,10 @@
-Contribution Guide
+# Contribution Guide
 
 Thank you for your interst in contributing to our Open-Source-Project Tic-Tac-Toe!
 Through user assitance from developers like you, we are able to grow and improve our software. Therefore benefitting the whole user community.
 Please take a little bit of time reading this guide. It will make sure you get a smooth and pleasing experience contributing to our Project.
 
-1. Setting up your work enviroment.
+## 1. Setting up your work enviroment.
     First, you'll need to fork our repository so you can make your changes without affecting the main codebase. Here are the steps:
       - Fork the project repository to your own personal GitHub account.
       - Clone the fork to your machine locally.
