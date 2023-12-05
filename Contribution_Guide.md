@@ -20,7 +20,8 @@ Please take a little bit of time reading this guide. It will make sure you get a
     If you have communicated with the owners and you are ready to make the changes, please pay close attention to the following rules:
       - Make sure to write clear meaningful commit messages.
       - Make sure your changes are well-tested.
-      - Ensure your code follows the existing style of the project to make it easier for others to understand. (Remember, if you are not able to understand your code, why should anyone else be?)
+      - Ensure your code follows the existing style of the project to make it easier for others to understand. 
+        (Remember, if you are not able to understand your code, why should anyone else be?)
 
 ## 3. Submitting your code via a pull request
   If you decide your code is ready to be merged into the project, please follow the following steps.
