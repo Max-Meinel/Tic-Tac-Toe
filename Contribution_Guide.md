@@ -12,7 +12,7 @@ Please take a little bit of time reading this guide. It will make sure you get a
 
     Remember to regularly pull changes from the upstream repository to keep your local repository up to date.
 
-2. Making Changes to the Project
+## 2. Making Changes to the Project
     If you are commited to making a change, please discuss your plans with the owners of this repository.
     You can do this by communicating via e-mail, issue or any other method of your liking as long as the owners can be reached via those methods.
     It would be a pity if you spend a lot of time working on a change, which will not make it into the project.
