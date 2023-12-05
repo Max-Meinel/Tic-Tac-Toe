@@ -22,7 +22,7 @@ Please take a little bit of time reading this guide. It will make sure you get a
       - Make sure your changes are well-tested.
       - Ensure your code follows the existing style of the project to make it easier for others to understand. (Remember, if you are not able to understand your code, why should anyone else be?)
 
-3. Submitting your code via a pull request
+## 3. Submitting your code via a pull request
   If you decide your code is ready to be merged into the project, please follow the following steps.
     - Push your local branch to your forked copy of the repository.
     - From your forked repository, submit a Pull Request (PR) to the main repository.
@@ -31,7 +31,7 @@ Please take a little bit of time reading this guide. It will make sure you get a
   If you submit your code it can take a while until your code gets either merged into the project or the maintainers of the project might reach out to you asking for clarafication or changes.
   Therefore please be available to collaborate further on your code until ist fully merged.
 
-Finally:
+## Finally:
 Thank you for your contributions to our projects! 
 We greatly appreciate your hardwork in order to improve our Open-Source-Project and are more than happy to have you as part of our community!
 
