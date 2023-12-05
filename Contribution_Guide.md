@@ -14,10 +14,12 @@ Please take a little bit of time reading this guide. It will make sure you get a
 
 ## 2. Making Changes to the Project
     If you are commited to making a change, please discuss your plans with the owners of this repository.
-    You can do this by communicating via e-mail, issue or any other method of your liking as long as the owners can be reached via those methods.
+    You can do this by communicating via e-mail, issue or any other method of your liking as long as the owners
+    can be reached via those methods.
     It would be a pity if you spend a lot of time working on a change, which will not make it into the project.
 
-    If you have communicated with the owners and you are ready to make the changes, please pay close attention to the following rules:
+    If you have communicated with the owners and you are ready to make the changes, 
+    please pay close attention to the following rules:
       - Make sure to write clear meaningful commit messages.
       - Make sure your changes are well-tested.
       - Ensure your code follows the existing style of the project to make it easier for others to understand. 
