@@ -5,7 +5,8 @@ Through user assitance from developers like you, we are able to grow and improve
 Please take a little bit of time reading this guide. It will make sure you get a smooth and pleasing experience contributing to our Project.
 
 ## 1. Setting up your work enviroment.
-    First, you'll need to fork our repository so you can make your changes without affecting the main codebase. Here are the steps:
+    First, you'll need to fork our repository so you can make your changes without affecting the main codebase. 
+    Here are the steps:
       - Fork the project repository to your own personal GitHub account.
       - Clone the fork to your machine locally.
       - Create a git branch on which you'll work on your bug fix or feature.
