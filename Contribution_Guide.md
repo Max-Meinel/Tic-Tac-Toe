@@ -30,7 +30,8 @@ Please take a little bit of time reading this guide. It will make sure you get a
     If you decide your code is ready to be merged into the project, please follow the following steps.
         - Push your local branch to your forked copy of the repository.
         - From your forked repository, submit a Pull Request (PR) to the main repository.
-        - In the PR submission description, please include as many details as possible and reference any issues related to your PR.
+        - In the PR submission description, please include as many details as possible and reference 
+          any issues related to your PR.
 
   If you submit your code it can take a while until your code gets either merged into the project or the maintainers of the project might reach out to you asking for clarafication or changes.
   Therefore please be available to collaborate further on your code until ist fully merged.
