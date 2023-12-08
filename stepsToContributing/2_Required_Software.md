@@ -1,4 +1,4 @@
-# Required Software
+# 2.Required Software
 ## git
 Having git installed is strongly recommended.
 ## Installed integrated development enviroment (IDE)
