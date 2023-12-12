@@ -4,3 +4,4 @@ All important changes made in this project must be documented in this **Changelo
 </br>Please note that this project **does not follow** the Semantic Versioning.
 
 ## Base Project
+solved Issue Game Repeating Method #8.
