@@ -4,7 +4,7 @@ Through user assitance from developers like you, we are able to grow and improve
 Please take a little bit of time reading this guide. It will make sure you get a smooth and pleasing experience contributing to our Project.
 
 # Step by Step Guide
-If you want a Step by Step Guide, whatch this 
+If you want a Step by Step Guide, whatch this ![fork-repository](https://github.com/Max-Meinel/Tic-Tac-Toe/blob/main/media/fork_repository)
 
 ## 1. Claim an Issue
 Go to the Issues tab and choose a Issue wich is not assigned to someone. To work on an issue, comment on it to claim your interest in tackling it. Once claimed, wait for confirmation from the project owner regarding assignment or approval to proceed.
