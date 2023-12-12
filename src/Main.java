@@ -49,6 +49,14 @@ public class Main {
                 return true;
             }
         }
+        if (spielFeld[0][0].equals(player) && spielFeld[1][1].equals(player) && spielFeld[2][2].equals(player)) {
+            System.out.println("Player " + player + " won!");
+            return true;
+        }
+        if (spielFeld[2][0].equals(player) && spielFeld[1][1].equals(player) && spielFeld[0][2].equals(player)) {
+            System.out.println("Player " + player + " won!");
+            return true;
+        }
 
         return false;
 
