@@ -50,15 +50,8 @@ public class Main {
         int p1_input_x = scanner.nextInt();
         System.out.print("Y:");
         int p1_input_y = scanner.nextInt();
-        if (spielFeld[p1_input_x][p1_input_y].equals(" ")) {
-            spielFeld[p1_input_x][p1_input_y] = player;
-            return spielFeld;
-        }
-        else {
-            System.out.println("Wrong input!!!");
-            playerInput(spielFeld, player);
-        }
-        return null;
+        spielFeld[p1_input_x][p1_input_y] = player;
+        return spielFeld;
     }
     private static void drawArray(String[][] array) {
         System.out.println("   0  1  2");
