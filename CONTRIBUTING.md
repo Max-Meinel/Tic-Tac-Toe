@@ -3,6 +3,9 @@ Thank you for your interst in contributing to our Open-Source-Project Tic-Tac-To
 Through user assitance from developers like you, we are able to grow and improve our software. Therefore benefitting the whole user community.
 Please take a little bit of time reading this guide. It will make sure you get a smooth and pleasing experience contributing to our Project.
 
+# Step by Step Guide
+If you want a Step by Step Guide, whatch this 
+
 ## 1. Claim an Issue
 Go to the Issues tab and choose a Issue wich is not assigned to someone. To work on an issue, comment on it to claim your interest in tackling it. Once claimed, wait for confirmation from the project owner regarding assignment or approval to proceed.
 
