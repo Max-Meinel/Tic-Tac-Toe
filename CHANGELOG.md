@@ -5,3 +5,4 @@ All important changes made in this project must be documented in this **Changelo
 
 ## Base Project
 solved Issue Game Repeating Method #8.
+Enhance gameDone() method to include diagonal checking #1 
