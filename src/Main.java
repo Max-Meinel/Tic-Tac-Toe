@@ -2,25 +2,36 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean gameRunning = true;
+        while(gameRunning){
 
-        String[][] spielFeld = {{" ", " ", " "}, {" ", " ", " "}, {" ", " ", " "}};
+            String[][] spielFeld = {{" ", " ", " "}, {" ", " ", " "}, {" ", " ", " "}};
 
-        boolean finished = false;
-        String player = "X";
+            boolean finished = false;
+            String player = "X";
 
-        do {
-            if (player == "X") {
-                player = "O";
-            }
-            else {
-                player = "X";
-            }
+            do {
+                if (player == "X") {
+                    player = "O";
+                }
+                else {
+                    player = "X";
+                }
+                drawArray(spielFeld);
+                playerInput(spielFeld, player);
+
+            } while (!gameDone(spielFeld, player));
+
             drawArray(spielFeld);
-            playerInput(spielFeld, player);
 
-        } while (!gameDone(spielFeld, player));
+            System.out.println("Replay Game? Y/N");
+            String repeatGame = scanner.next();
+            if(!repeatGame.equalsIgnoreCase("Y")){
+                gameRunning = false;
+            }
 
-        drawArray(spielFeld);
+        }
 
     }
 
@@ -64,4 +75,5 @@ public class Main {
         }
     }
 }
+
 
