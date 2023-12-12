@@ -4,7 +4,7 @@ Through user assitance from developers like you, we are able to grow and improve
 Please take a little bit of time reading this guide. It will make sure you get a smooth and pleasing experience contributing to our Project.
 
 ## 1. Claim an Issue
-
+Go to the Issues tab and choose a Issue wich is not assigned to someone. To work on an issue, comment on it to claim your interest in tackling it. Once claimed, wait for confirmation from the project owner regarding assignment or approval to proceed.
 
 ## 2. Setting up your work enviroment
 You have to fork the repository in order to make changes.
