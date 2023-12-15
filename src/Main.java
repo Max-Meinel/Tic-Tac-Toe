@@ -47,9 +47,9 @@ public class Main {
 
         System.out.println("Player " + player + ":");
         System.out.print("X:");
-        int p1_input_x = scanner.nextInt();
+        int p1_input_x = playerInput("X");
         System.out.print("Y:");
-        int p1_input_y = scanner.nextInt();
+        int p1_input_y = splayerInput("Y");
         spielFeld[p1_input_x][p1_input_y] = player;
         return spielFeld;
     }
@@ -63,5 +63,17 @@ public class Main {
             System.out.println();
         }
     }
+    private static int playerInput(String lineOrColumn){
+    Scanner scanner = new Scanner(System.in); //Initialize Scanner
+    while(true){ //The While statement runs indefinetly and breaks only if the player puts in the correct values
+        int entry = scanner.nextInt();//Scans player input
+        if(0<=entry && entry<=2){//Checks the input for the correct value
+            return entry;
+        }else{
+            System.out.println("Only values between 0 and 2 are permitted, please write the value for "+ lineOrColumn+" again"); //Message with explenation incase of an wrong input
+        }
+    }
+
+}
 }
 
