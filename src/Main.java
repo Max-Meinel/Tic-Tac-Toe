@@ -1,92 +1,79 @@
-import java.util.Scanner;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        boolean gameRunning = true;
-        while(gameRunning){
+public class Main extends JFrame {
+    private char aPlayerXorO;
+    private JButton[] aButtons;
 
-            String[][] spielFeld = {{" ", " ", " "}, {" ", " ", " "}, {" ", " ", " "}};
+    public void main(String[] args) {
+        aPlayerXorO = 'X';
+        aButtons = new JButton[9];
 
-            boolean finished = false;
-            String player = "X";
+        setSize(getScreenDimension()); // set size to full screen
+        setLayout(new GridLayout(3, 3));
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-            do {
-                if (player == "X") {
-                    player = "O";
+        initializeButtons();
+
+        setExtendedState(MAXIMIZED_BOTH); // maximize window
+
+        setVisible(true);
+    }
+
+    private Dimension getScreenDimension() {
+        return Toolkit.getDefaultToolkit().getScreenSize();
+    }
+
+    public void initializeButtons() {
+        for (int i = 0; i <= 8; i++) {
+            aButtons[i] = new JButton();
+            aButtons[i].setText("");
+            aButtons[i].setFont(new Font("Arial", Font.BOLD, 70));  // set the font size here
+            aButtons[i].setFocusable(false);
+            aButtons[i].addActionListener(new ActionListener() {
+
+                public void actionPerformed(ActionEvent e) {
+                    JButton buttonClicked = (JButton) e.getSource();
+                    buttonClicked.setText(String.valueOf(aPlayerXorO));
+                    buttonClicked.setEnabled(false);
+                    winCheck();
+                    switchPlayer();
                 }
-                else {
-                    player = "X";
-                }
-                drawArray(spielFeld);
-                playerInput(spielFeld, player);
+            });
 
-            } while (!gameDone(spielFeld, player));
-
-            drawArray(spielFeld);
-
-            System.out.println("Replay Game? Y/N");
-            String repeatGame = scanner.next();
-            if(!repeatGame.equalsIgnoreCase("Y")){
-                gameRunning = false;
-            }
-
-        }
-
-    }
-
-    private static boolean gameDone(String[][] spielFeld, String player) {
-
-        for (int i = 0; i < 3; i++) {
-            if (spielFeld[i][0].equals(player) && spielFeld[i][1].equals(player) && spielFeld[i][2].equals(player)) {
-                System.out.println("Player " + player + " won!");
-                return true;
-            }
-        }
-        for (int i = 0; i < 3; i++) {
-            if (spielFeld[0][i].equals(player) && spielFeld[1][i].equals(player) && spielFeld[2][i].equals(player)) {
-                System.out.println("Player " + player + " won!");
-                return true;
-            }
-        }
-        
-
-        return false;
-
-    }
-    private static String[][] playerInput(String[][] spielFeld, String player) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Player " + player + ":");
-        System.out.print("X:");
-        int p1_input_x = playerInput("X");
-        System.out.print("Y:");
-        int p1_input_y = playerInput("Y");
-        spielFeld[p1_input_x][p1_input_y] = player;
-        return spielFeld;
-    }
-    private static void drawArray(String[][] array) {
-        System.out.println("   0  1  2");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(i + " ");
-            for (int j = 0; j < array[0].length; j++) {
-                System.out.print("[" + array[i][j] + "]");
-            }
-            System.out.println();
+            add(aButtons[i]);
         }
     }
-    private static int playerInput(String lineOrColumn){
-    Scanner scanner = new Scanner(System.in); //Initialize Scanner
-    while(true){ //The While statement runs indefinetly and breaks only if the player puts in the correct values
-        int entry = scanner.nextInt();//Scans player input
-        if(0<=entry && entry<=2){//Checks the input for the correct value
-            return entry;
-        }else{
-            System.out.println("Only values between 0 and 2 are permitted, please write the value for "+ lineOrColumn+" again"); //Message with explenation incase of an wrong input
-        }
+
+    public void winCheck() {
+        // Check horizontal lines.
+        for (int i = 0; i < 9; i += 3)
+            if (checkLine(i, i + 1, i + 2))
+                endGame(aButtons[i].getText());
+
+        // Check vertical lines.
+        for (int i = 0; i < 3; ++i)
+            if (checkLine(i, i + 3, i + 6))
+                endGame(aButtons[i].getText());
+
+        // Check the diagonals.
+        if (checkLine(0, 4, 8) || checkLine(2, 4, 6))
+            endGame(aButtons[4].getText());
+    }
+
+    public boolean checkLine(int a, int b, int c) {
+        return aButtons[a].getText().equals(aButtons[b].getText()) && aButtons[b].getText().equals(aButtons[c].getText()) && !aButtons[a].getText().equals("");
+    }
+
+    public void endGame(String winner) {
+        JOptionPane.showConfirmDialog(null, String.format("%s wins", winner), "Game Over", JOptionPane.DEFAULT_OPTION);
+        System.exit(0);
+    }
+
+    public void switchPlayer() {
+        aPlayerXorO = (aPlayerXorO == 'X') ? 'O' : 'X';
     }
 
 }
-}
-
-
