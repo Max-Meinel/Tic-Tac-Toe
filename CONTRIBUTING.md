@@ -5,7 +5,7 @@ Please take a little bit of time reading this guide. It will make sure you get a
 
 # Step by Step Guide
 If you want a Step by Step Guide, whatch this [First Contribute Guide](https://github.com/Max-Meinel/Tic-Tac-Toe/wiki/First-Contribute-Guide).
-
+# Fast Guide
 ## 1. Claim an Issue
 Go to the Issues tab and choose a Issue wich is not assigned to someone. To work on an issue, comment on it to claim your interest in tackling it. Once claimed, wait for confirmation from the project owner regarding assignment or approval to proceed.
 
@@ -44,4 +44,4 @@ Thank you for your contributions to our projects!
 We greatly appreciate your hardwork in order to improve our Open-Source-Project and are more than happy to have you as part of our community!
 
 This Guidline may change overtime, therefore make sure to always be aware of the newest Guideline.
-Last Updated on 5th of December 2023.
+Last Updated on 18th of December 2023.
