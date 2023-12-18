@@ -8,6 +8,10 @@ public class Main extends JFrame {
     private JButton[] aButtons;//Declarates Buttons
 
     public static void main(String[] args) {
+        new Main();
+    }
+
+    public Main() {
         setTitle("Tic-Tac-Toe  Player versus Player"); //Title of the Window
         setSize(getScreenDimension()); //Set the size of the window to the size of the screen
 
@@ -66,6 +70,8 @@ public class Main extends JFrame {
         for (int i = 0; i < 3; ++i)
             if (checkLine(i, i + 3, i + 6))
                 return true;
+        
+        return false;
     }
 
     public boolean checkLine(int a, int b, int c) {//checks the line wheter all three buttons are occupied by one user
