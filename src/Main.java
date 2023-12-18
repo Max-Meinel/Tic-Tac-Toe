@@ -68,7 +68,7 @@ public class Main {
         System.out.print("X:");
         int p1_input_x = playerInput("X");
         System.out.print("Y:");
-        int p1_input_y = splayerInput("Y");
+        int p1_input_y = playerInput("Y");
         spielFeld[p1_input_x][p1_input_y] = player;
         return spielFeld;
     }
