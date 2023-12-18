@@ -3,11 +3,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GameWithUI extends JFrame {
+public class Main extends JFrame {
     private char aPlayerXorO;//Variable holds the value of the current Player
     private JButton[] aButtons;//Declarates Buttons
 
-    public GameWithUI() {
+    public void main(String[] args) Main() {
         setTitle("Tic-Tac-Toe  Player versus Player"); //Title of the Window
         setSize(getScreenDimension()); //Set the size of the window to the size of the screen
 
