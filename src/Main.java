@@ -7,7 +7,7 @@ public class Main extends JFrame {
     private char aPlayerXorO;//Variable holds the value of the current Player
     private JButton[] aButtons;//Declarates Buttons
 
-    public void main(String[] args) Main() {
+    public static void main(String[] args) {
         setTitle("Tic-Tac-Toe  Player versus Player"); //Title of the Window
         setSize(getScreenDimension()); //Set the size of the window to the size of the screen
 
