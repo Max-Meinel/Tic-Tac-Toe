@@ -8,5 +8,5 @@ All important changes made in this project must be documented in this **Changelo
 - Issue [`#4`](https://github.com/Max-Meinel/Tic-Tac-Toe/issues/4) closed Added Limit player input to valid range (0-2) for X and Y coordinates.
 ## Base Project
 Tic-TacToe Game </br>
-Base functionalities </br>
+Base functionalities: </br>
 
