@@ -12,5 +12,5 @@ All important changes made in this project must be documented in this **Changelo
   
 ## Base Project
 Tic-TacToe Game </br>
-Base functionalities: </br>
+
 
