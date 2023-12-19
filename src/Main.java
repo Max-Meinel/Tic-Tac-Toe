@@ -70,7 +70,12 @@ public class Main extends JFrame {
         for (int i = 0; i < 3; ++i)
             if (checkLine(i, i + 3, i + 6))
                 return true;
-        
+
+        // Check the diagonals.
+        if (checkLine(0, 4, 8) || checkLine(2, 4, 6))
+            return true;
+
+
         return false;
     }
 
