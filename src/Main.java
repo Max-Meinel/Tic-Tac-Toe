@@ -43,9 +43,16 @@ public class Main extends JFrame {
                     buttonClicked.setText(String.valueOf(aPlayerXorO));
                     buttonClicked.setEnabled(false);
 
-                    if(gameDone()){
+                    if(gameDone() == 1){
                         //if the game ends the players can decide to play another round, without restarting the whole Application, a pop up lets the player decide
                         int option = JOptionPane.showConfirmDialog(null, "Player " + aPlayerXorO + " won! Would you like to play again?", "Game Over", JOptionPane.YES_NO_OPTION);
+                        if(option == JOptionPane.YES_OPTION){//in case they want to play another round, the game table gets resetted
+                            resetButtons();//resets the game table
+                        } else {
+                            System.exit(0);//ends the application
+                        }
+                    }else if(gameDone() == 2){
+                        int option = JOptionPane.showConfirmDialog(null, "It's a tie! Would you like to play again?", "Game Over", JOptionPane.YES_NO_OPTION);
                         if(option == JOptionPane.YES_OPTION){//in case they want to play another round, the game table gets resetted
                             resetButtons();//resets the game table
                         } else {
@@ -60,23 +67,35 @@ public class Main extends JFrame {
             add(aButtons[i]);//Adds the button
         }
     }
-    public boolean gameDone() {
+
+    public int gameDone() {
         // Check horizontal lines.
         for (int i = 0; i < 9; i += 3)
             if (checkLine(i, i + 1, i + 2))
-                return true;
+                return 1;
 
         // Check vertical lines.
         for (int i = 0; i < 3; ++i)
             if (checkLine(i, i + 3, i + 6))
-                return true;
+                return 1;
 
         // Check the diagonals.
         if (checkLine(0, 4, 8) || checkLine(2, 4, 6))
-            return true;
+            return 1;
 
+        int count = 0;
 
-        return false;
+        for(int i=0;i<9;i++){
+            if(aButtons[i].getText() != ""){
+                count++;
+            }
+        }
+
+        if(count == 9){
+            return 2;
+        }
+
+        return 0;
     }
 
     public boolean checkLine(int a, int b, int c) {//checks the line wheter all three buttons are occupied by one user
